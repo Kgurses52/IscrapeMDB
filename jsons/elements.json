@@ -1,0 +1,114 @@
+{
+    "searchBar": {
+        "by": "NAME",
+        "value": "q"
+    },
+    "resultsDiv": {
+        "by": "CLASS_NAME",
+        "value": "sc-b4f120f6-0.bQhtuJ.cli-children"
+    },
+    "resultTitle": {
+        "by": "CLASS_NAME",
+        "value": "ipc-title-link-wrapper"
+    },
+    "resultDate": {
+        "by": "CLASS_NAME",
+        "value": "sc-b4f120f6-7.hoOxkw.cli-title-metadata-item" 
+    },
+    "extactBtn": {
+    "by": "CLASS_NAME",
+    "value": "ipc-btn.ipc-btn--single-padding.ipc-btn--center-align-content.ipc-btn--default-height.ipc-btn--core-base.ipc-btn--theme-base.ipc-btn--button-radius.ipc-btn--on-textSecondary.ipc-text-button.results-section-exact-match-btn"
+    },
+    "targetType": {
+        "by": "CSS_SELECTOR",
+        "value": "a[data-testid='hero-subnav-bar-series-episode-guide-link']"
+    },
+    "targetTitle": {
+    "by": "CLASS_NAME",
+    "value": "hero__primary-text"
+    },
+    "targetDate": {
+    "by": "CSS_SELECTOR",
+    "value": "ul.ipc-inline-list li.ipc-inline-list__item a[href*='releaseinfo']"
+    },
+    "targetRate": {
+    "by": "CSS_SELECTOR",
+    "value": ".sc-4dc495c1-1.lbQcRY"
+    },
+    "targetDescription": {
+    "by": "CLASS_NAME",
+    "value": "sc-bf30a0e-0.iOCbqI"
+    },
+    "epsCount": {
+    "by": "CSS_SELECTOR",
+    "value": ".ipc-title__subtext"
+    },
+    "firstEps": {
+    "by": "CSS_SELECTOR",
+    "value": ".ipc-title-link-wrapper"
+    },
+    "nextEpsBtn": {
+    "by": "CSS_SELECTOR",
+    "value": ".ipc-icon.ipc-icon--arrow-right.ipc-icon--inline"
+    },
+    "nuditySection": {
+    "by": "CSS_SELECTOR",
+    "value": ".ipc-page-section.ipc-page-section--base"
+    },
+    "epsAddress": {
+        "by": "CSS_SELECTOR",
+        "value": ".sc-9fd66029-0.hZCZSu.baseAlt"
+    },
+    "parentsGuide": {
+        "by": "CSS_SELECTOR",
+        "value": "li[data-testid='rating-item']"
+    },
+    "parentsGuideType": {
+        "by": "CSS_SELECTOR",
+        "value": ".ipc-metadata-list-item__label"
+    },
+    "parentsGuideRating": {
+        "by": "CSS_SELECTOR",
+        "value": ".ipc-html-content-inner-div"
+    },
+    "reviewAllbtn": {
+        "by": "CSS_SELECTOR",
+        "value": ".chained-see-more-button button"
+    },
+    "reviewTitle": {
+        "by": "CSS_SELECTOR",
+        "value": "[data-testid='review-summary'] .ipc-title__text"
+    },
+    "reviewContent": {
+        "by": "CSS_SELECTOR",
+        "value": ".ipc-html-content-inner-div"
+    },
+    "castDiv": {
+        "by": "CSS_SELECTOR",
+        "value": "section[data-testid='title-cast']"
+    },
+    "castName": {
+        "by": "CSS_SELECTOR",
+        "value": "a[data-testid='title-cast-item__actor']"
+    },
+    "castRole": {
+        "by": "CSS_SELECTOR",
+        "value": "ul[data-testid='cast-item-characters-list']"
+    },
+    "storyline": {
+        "by": "CSS_SELECTOR",
+        "value": "section[data-testid='Storyline'] div.ipc-html-content-inner-div"
+    },
+    "runtime": {
+        "by": "CSS_SELECTOR",
+        "value": "li[data-testid='title-techspec_runtime'] .ipc-metadata-list-item__list-content-item"
+    },
+    "targetDirs": {
+        "by": "CSS_SELECTOR",
+        "value": "section.ipc-page-section li[data-testid='title-pc-principal-credit']:first-child a"
+    },
+    "targetWriters": {
+        "by": "XPATH",
+        "value": "//li[@data-testid='title-pc-principal-credit'][.//span[text()='Writers']]//a[contains(@class, 'ipc-metadata-list-item__list-content-item')]"
+    }
+}

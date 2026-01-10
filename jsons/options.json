@@ -1,0 +1,7 @@
+{
+    "defaultBrowser": "chrome",
+    "headless": false,
+    "parentsGuide": true,
+    "reviews": true,
+    "wait": 0
+}
