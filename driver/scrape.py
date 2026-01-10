@@ -28,7 +28,8 @@ def fullScrape(
     just_main: bool = False,
     folder_name: Optional[str] = None,
     create_html: bool = True,
-    append_to_filepath: str = ""
+    append_to_filepath: str = "",
+    series_loop: bool = False
 ):
     """
     Main orchestration function to scrape data and save it.
@@ -54,8 +55,8 @@ def fullScrape(
     json_path = ""
     
     # Logic for base path selection
-    if append_to_filepath:
-        main_id = target_title # Override ID if appending (e.g. for episodes)
+    if not series_loop and append_to_filepath:
+        main_id = target_title
         json_path = f"{append_to_filepath}/data/"
     elif media_type == "series":
         base_path = f"Scraped/Series/{folder_name}"
@@ -64,7 +65,6 @@ def fullScrape(
         if create_html:
             createIndexSeries(f"{base_path}/")
     else: # Default to movie
-        main_id = target_title
         base_path = f"Scraped/Movies/{folder_name}"
         create_folder(f"{base_path}/data/")
         json_path = f"{base_path}/data/"
@@ -181,7 +181,8 @@ def fullScrapeSeries(driver, eps_count, folder_name, pg=True, ur=True, urs=0):
             just_main=True, 
             folder_name=folder_name, 
             create_html=False,
-            append_to_filepath=f"Scraped/Series/{folder_name}"
+            append_to_filepath=f"Scraped/Series/{folder_name}",
+            series_loop = True
         )
 
         # Navigation to next episode
