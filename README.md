@@ -21,16 +21,13 @@ Series Support: Recursively scrapes every single episode of a TV show.
 
 Portable Data: Saves data locally in structured formats and generates an offline HTML viewer.
 
-<img width="1125" height="819" alt="image" src="https://github.com/user-attachments/assets/a5db1170-ed2d-42a7-8132-00154d2a7ad3" />
-
-
 Resilient: Skips missing data points without crashing the entire batch.
 
 Installation
 
 Clone the repo:
 
-git clone [https://github.com/YourUsername/IscrapeMDB.git](https://github.com/YourUsername/IscrapeMDB.git)
+git clone [https://github.com/BMYSTERIO/IscrapeMDB.git](https://github.com/BMYSTERIO/IscrapeMDB.git)
 cd IscrapeMDB
 
 
@@ -61,6 +58,9 @@ It creates a folder: Scraped/Movies/The Shawshank Redemption (1994)/.
 
 Inside data/, it saves main.js (metadata) and review.js (user reviews).
 
+<img width="1035" height="787" alt="image" src="https://github.com/user-attachments/assets/7ef4959c-9da3-4bbf-8c50-f47dca219aa1" />
+
+
 2. Batch Scraping (Text File)
 
 If you have a list of URLs, put them in a text file (one URL per line) and run:
@@ -83,7 +83,16 @@ Append items to an existing list:
 
 python main.py link1 link2 .... linki -a "Scraped/Lists/Horror_Classics"
 
+<img width="1891" height="825" alt="image" src="https://github.com/user-attachments/assets/40511efd-0fb0-4ae7-a80c-e2b60b607880" />
+
+
 <img width="921" height="294" alt="image" src="https://github.com/user-attachments/assets/de1f4b46-c7a3-41a7-8bc1-a5ab051e6e3b" />
+
+If you want to scrape a full series
+main.py serieslink
+and it will scrape it and all its eps
+
+<img width="1810" height="898" alt="image" src="https://github.com/user-attachments/assets/803359f2-22f7-44b4-bd6f-08db12218764" />
 
 
 Advanced Options
