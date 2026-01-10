@@ -43,7 +43,7 @@ def getTargetInfo(driver) -> Tuple[str, str, str, str]:
     for field in fields:
         try:
             info = els[field]
-            element = getEl(driver, info["by"], info["value"])
+            element = getEl(driver, info["by"], info["value"],10)
             data[field] = element
         except Exception:
             data[field] = "None"
