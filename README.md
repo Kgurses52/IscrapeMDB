@@ -1,7 +1,7 @@
 IscrapeMDB
 
 The robust, browser-agnostic IMDb data extractor.
-No API keys. No rate limits. Just data.
+No API keys. No rate limits.
 
 <img width="382" height="73" alt="image" src="https://github.com/user-attachments/assets/3681050d-70e6-43e8-9c7a-de63b8472519" />
 
